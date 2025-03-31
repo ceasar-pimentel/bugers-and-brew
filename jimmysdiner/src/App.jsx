@@ -12,8 +12,9 @@ function App() {
 		setCart((prevCart) => {
 			return [...prevCart, item];
 		});
-		console.log(cart);
 	}
+
+	//console.log(cart);
 
 	React.useEffect(() => {
 		fetch("/api/items")
@@ -35,7 +36,7 @@ function App() {
 		<>
 			<Header />
 			<Main>{itemElements}</Main>
-			{cart.length > 0 ? <Footer /> : undefined}
+			{cart.length > 0 ? <Footer items={cart} /> : undefined}
 		</>
 	);
 }
