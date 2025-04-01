@@ -90,14 +90,31 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding-bottom: 50px;
+}
+
+.footer > h3 {
+	margin-top: 3rem;
+	margin-bottom: 0px;
+}
+
+.footer .total-item-section:last-of-type {
+	border-bottom: 1px solid #cbcbcb;
+	padding-bottom: 1rem;
+	margin-bottom: 2rem;
 }
 
 .total-item-section {
-	width: 70%;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: baseline;
 	justify-content: space-between;
+	gap: 0.5rem;
+}
+
+.total-item-section > p {
+	margin: 0.25rem 0;
 }
 
 .remove-button {
@@ -114,6 +131,13 @@ body {
 
 .remove-button-div {
 	flex-grow: 1;
+}
+
+.div-total {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 @media (max-width: 767px) {
@@ -182,6 +206,7 @@ body {
 	}
 
 	.footer {
-		width: 75%;
+		width: 50%;
+		font-size: 1.5rem;
 	}
 }

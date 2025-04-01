@@ -4,17 +4,21 @@ import DinerItem from "./Components/DinerItem";
 import Header from "./Components/Header";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
+
 function App() {
 	const [items, setItems] = React.useState();
-	const [cart, setCart] = React.useState([]);
+	const [cart, setCart] = React.useState({});
 
 	function onAddToCard(item) {
 		setCart((prevCart) => {
-			return [...prevCart, item];
+			if (!Object.keys(prevCart).includes(item.name)) {
+				return { ...prevCart, [item.name]: [item] };
+			}
+			return { ...prevCart, [item.name]: [...prevCart[item.name], item] };
 		});
 	}
 
-	//console.log(cart);
+	console.log(cart);
 
 	React.useEffect(() => {
 		fetch("/api/items")
@@ -36,7 +40,7 @@ function App() {
 		<>
 			<Header />
 			<Main>{itemElements}</Main>
-			{cart.length > 0 ? <Footer items={cart} /> : undefined}
+			{Object.keys(cart).length > 0 ? <Footer items={cart} /> : undefined}
 		</>
 	);
 }
