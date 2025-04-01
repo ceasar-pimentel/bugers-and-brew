@@ -12,11 +12,11 @@
 }
 
 .large-text {
-	font-size: 1.75rem;
+	font-size: 1.25rem;
 }
 
 .extra-large-text {
-	font-size: 3rem;
+	font-size: 1.75rem;
 }
 
 .header {
@@ -101,7 +101,6 @@ body {
 .footer .total-item-section:last-of-type {
 	border-bottom: 1px solid #cbcbcb;
 	padding-bottom: 1rem;
-	margin-bottom: 2rem;
 }
 
 .total-item-section {
@@ -140,9 +139,23 @@ body {
 	justify-content: space-between;
 }
 
+.complete-order-btn {
+	margin-bottom: 2rem;
+	background-color: #16db99;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	width: 100%;
+	font-size: medium;
+	color: white;
+	font-family: Verdana, sans-serif;
+	height: 60px;
+}
+
 @media (max-width: 767px) {
 	main {
-		padding: 2rem;
+		width: 84%;
+		margin: 0px auto;
 	}
 
 	.header {
@@ -178,14 +191,14 @@ body {
 	}
 
 	.footer {
-		width: 100%;
+		width: 84%;
 	}
 }
 
 @media (min-width: 768px) {
 	.main {
 		margin: auto;
-		width: 75%;
+		width: 84%;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
 		grid-template-rows: 1fr;

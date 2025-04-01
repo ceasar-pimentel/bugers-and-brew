@@ -5,18 +5,18 @@ export default function Footer({ items, ...rest }) {
 		console.log(`${key} ${items[key].length}`);
 		const item = items[key][0];
 		total += items[key].length * Number(item.price);
-		return <TotalItem item={item} quantity={items[key].length} />;
+		return <TotalItem key={key} item={item} quantity={items[key].length} />;
 	});
 
 	return (
 		<footer className="footer">
 			<h3>Your Order</h3>
 			{totalItemElements}
-			<button>Complete order</button>
-			<div className="div-total">
-				<p>Total</p>
-				<p>{total}</p>
+			<div className="div-total large-text">
+				<p className="extra-large-text">Total</p>
+				<p className="large-text">{total}</p>
 			</div>
+			<button className="complete-order-btn">Complete order</button>
 		</footer>
 	);
 }
