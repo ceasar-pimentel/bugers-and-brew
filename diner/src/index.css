@@ -195,11 +195,12 @@ body {
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
 	.main {
 		margin: auto;
-		width: 84%;
 		display: grid;
+		width: 84%;
+		place-items: center;
 		grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
 		grid-template-rows: 1fr;
 		gap: 1rem;
