@@ -19,6 +19,9 @@ function App() {
 	}
 
 	function onClickCompleteOrder() {}
+
+	function onClickRemove() {}
+
 	console.log(cart);
 
 	React.useEffect(() => {
