@@ -44,7 +44,9 @@ jobs:
           npm ci
 
       - name: Build
-        run: npm run build
+        run: |
+          cd diner
+          npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
