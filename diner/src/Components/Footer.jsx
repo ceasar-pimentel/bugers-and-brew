@@ -40,14 +40,19 @@ export default function Footer({ items, onClickRemove, ...rest }) {
 					<input
 						className="payment-input"
 						placeholder="Enter your fake name"
+						type="text"
 					></input>
 					<input
 						className="payment-input"
 						placeholder="Enter your fake card number"
+						type="text"
+						inputMode="numerical"
 					></input>
 					<input
 						className="payment-input"
 						placeholder="Enter your fake cvv"
+						type="text"
+						inputMode="numerical"
 					></input>
 					<button className="payment-button extra-large-text">Pay</button>
 				</form>
