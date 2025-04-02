@@ -1,11 +1,26 @@
 import TotalItem from "./TotalItem";
-export default function Footer({ items, ...rest }) {
+import React from "react";
+
+export default function Footer({ items, onClickRemove, ...rest }) {
+	const [showPayment, setShowPayment] = React.useState(() => false);
+
+	function onClickCompleteOrder() {
+		setShowPayment((prev) => !prev);
+	}
+
 	let total = 0;
 	const totalItemElements = Object.keys(items).map((key) => {
 		console.log(`${key} ${items[key].length}`);
 		const item = items[key][0];
 		total += items[key].length * Number(item.price);
-		return <TotalItem key={key} item={item} quantity={items[key].length} />;
+		return (
+			<TotalItem
+				className="total-item"
+				key={key}
+				item={item}
+				quantity={items[key].length}
+			/>
+		);
 	});
 
 	return (
@@ -16,7 +31,27 @@ export default function Footer({ items, ...rest }) {
 				<p className="extra-large-text">Total</p>
 				<p className="large-text">{total}</p>
 			</div>
-			<button className="complete-order-btn">Complete order</button>
+			<button className="complete-order-btn" onClick={onClickCompleteOrder}>
+				Complete order
+			</button>
+			{showPayment ? (
+				<form className="payment-card">
+					<h3 className="extra-large-text">Enter card details</h3>
+					<input
+						className="payment-input"
+						placeholder="Enter your fake name"
+					></input>
+					<input
+						className="payment-input"
+						placeholder="Enter your fake card number"
+					></input>
+					<input
+						className="payment-input"
+						placeholder="Enter your fake cvv"
+					></input>
+					<button className="payment-button extra-large-text">Pay</button>
+				</form>
+			) : undefined}
 		</footer>
 	);
 }

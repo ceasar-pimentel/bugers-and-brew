@@ -18,6 +18,7 @@ function App() {
 		});
 	}
 
+	function onClickCompleteOrder() {}
 	console.log(cart);
 
 	React.useEffect(() => {
@@ -40,7 +41,13 @@ function App() {
 		<>
 			<Header />
 			<Main>{itemElements}</Main>
-			{Object.keys(cart).length > 0 ? <Footer items={cart} /> : undefined}
+			{Object.keys(cart).length > 0 ? (
+				<Footer
+					items={cart}
+					onClickComplete={onClickCompleteOrder}
+					onClickRemove={onClickRemove}
+				/>
+			) : undefined}
 		</>
 	);
 }
