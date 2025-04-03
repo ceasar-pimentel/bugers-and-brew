@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
-import DinerItem from "./Components/DinerItem";
-import Header from "./Components/Header";
-import Main from "./Components/Main";
-import Footer from "./Components/Footer";
+import DinerItem from "./components/DinerItem";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 function App() {
 	const [items, setItems] = React.useState();
