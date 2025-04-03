@@ -1,5 +1,5 @@
 import burger from "../assets/bgimg.svg";
-console.log(burger);
+
 export default function Header() {
 	return (
 		<div

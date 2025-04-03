@@ -1,16 +1,14 @@
 import TotalItem from "./TotalItem";
 import React from "react";
 
-export default function Footer({ items, onClickRemove, ...rest }) {
-	const [showPayment, setShowPayment] = React.useState(() => false);
-
-	function onClickCompleteOrder() {
-		setShowPayment((prev) => !prev);
-	}
-
+export default function Footer({
+	onClickCompleteOrder,
+	items,
+	onClickRemove,
+	...rest
+}) {
 	let total = 0;
 	const totalItemElements = Object.keys(items).map((key) => {
-		console.log(`${key} ${items[key].length}`);
 		const item = items[key][0];
 		total += items[key].length * Number(item.price);
 		return (
@@ -34,32 +32,6 @@ export default function Footer({ items, onClickRemove, ...rest }) {
 			<button className="complete-order-btn" onClick={onClickCompleteOrder}>
 				Complete order
 			</button>
-			{showPayment ? (
-				<form className="payment-card">
-					<h3 className="extra-large-text">Enter card details</h3>
-					<input
-						className="payment-input"
-						placeholder="Enter your fake name"
-						type="text"
-						required
-					></input>
-					<input
-						className="payment-input"
-						placeholder="Enter your fake card number"
-						type="text"
-						inputMode="numerical"
-						required
-					></input>
-					<input
-						className="payment-input"
-						placeholder="Enter your fake cvv"
-						type="text"
-						inputMode="numerical"
-						required
-					></input>
-					<button className="payment-button extra-large-text">Pay</button>
-				</form>
-			) : undefined}
 		</footer>
 	);
 }

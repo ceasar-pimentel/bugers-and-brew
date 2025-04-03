@@ -4,10 +4,12 @@ import DinerItem from "./Components/DinerItem";
 import Header from "./Components/Header";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
+import PaymentCard from "./Components/PaymentCard";
 
 function App() {
 	const [items, setItems] = React.useState();
 	const [cart, setCart] = React.useState({});
+	const [showPayment, setShowPayment] = React.useState(() => false);
 
 	function onAddToCard(item) {
 		setCart((prevCart) => {
@@ -18,7 +20,10 @@ function App() {
 		});
 	}
 
-	function onClickCompleteOrder() {}
+	function onClickCompleteOrder() {
+		console.log("showPayment");
+		setShowPayment((prev) => !prev);
+	}
 
 	function onClickRemove() {}
 
@@ -51,6 +56,7 @@ function App() {
 					onClickRemove={onClickRemove}
 				/>
 			) : undefined}
+			{showPayment ? <PaymentCard /> : undefined}
 		</>
 	);
 }

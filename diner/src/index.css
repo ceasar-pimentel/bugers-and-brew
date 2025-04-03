@@ -27,6 +27,7 @@
 
 body {
 	margin: 0;
+	max-height: 100vh;
 	overflow-y: overlay;
 }
 
@@ -159,9 +160,12 @@ body {
 	position: fixed;
 	margin: auto;
 	width: 70%;
+	height: 70%;
+	top: 50%; /* 50% from the top of the viewport */
+	left: 50%; /* 50% from the left of the viewport */
+	transform: translate(-50%, -50%);
 	box-shadow: 0px 0px 100px 0px gray;
 	background-color: white;
-	top: 250px;
 	display: flex;
 	flex-direction: column;
 	padding: 1.5rem;
