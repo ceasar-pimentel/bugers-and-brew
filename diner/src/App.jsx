@@ -52,7 +52,7 @@ function App() {
 			{Object.keys(cart).length > 0 ? (
 				<Footer
 					items={cart}
-					onClickComplete={onClickCompleteOrder}
+					onClickCompleteOrder={onClickCompleteOrder}
 					onClickRemove={onClickRemove}
 				/>
 			) : undefined}
