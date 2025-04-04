@@ -1,0 +1,372 @@
+.dark {
+	/* 
+     * --md-sys-color-primary
+     * The primary color of the UI, typically used for prominent elements like buttons, links, and headings.
+     * Example: Main action buttons or primary navigation elements.
+     */
+	--md-sys-color-primary: rgb(153 212 162);
+
+	/* 
+     * --md-sys-color-surface-tint
+     * A tint of the primary color applied to surfaces for a subtle effect. This is often used for surfaces that need a light touch of the primary color.
+     * Example: Card backgrounds or secondary button hover effects.
+     */
+	--md-sys-color-surface-tint: rgb(153 212 162);
+
+	/* 
+     * --md-sys-color-on-primary
+     * Color used for text and icons that appear on primary colored surfaces, ensuring proper contrast and readability.
+     * Example: Text inside primary-colored buttons or headers.
+     */
+	--md-sys-color-on-primary: rgb(0 57 23);
+
+	/* 
+     * --md-sys-color-primary-container
+     * A variant of the primary color used for containers. It’s a less saturated shade, typically for background surfaces.
+     * Example: Background color for primary-colored containers like modals or alerts.
+     */
+	--md-sys-color-primary-container: rgb(25 81 42);
+
+	/* 
+     * --md-sys-color-on-primary-container
+     * Text and icon color for elements that appear on primary container backgrounds.
+     * Example: Text or icons on primary container backgrounds.
+     */
+	--md-sys-color-on-primary-container: rgb(181 241 189);
+
+	/* 
+     * --md-sys-color-secondary
+     * The secondary color of the UI, often used for less prominent elements, including secondary buttons and text.
+     * Example: Secondary buttons or secondary navigation elements.
+     */
+	--md-sys-color-secondary: rgb(183 204 183);
+
+	/* 
+     * --md-sys-color-on-secondary
+     * Text or icon color for elements placed on secondary-colored surfaces.
+     * Example: Text inside secondary buttons or secondary navigation links.
+     */
+	--md-sys-color-on-secondary: rgb(35 52 37);
+
+	/* 
+     * --md-sys-color-secondary-container
+     * A variant of the secondary color, used for secondary-colored containers or backgrounds.
+     * Example: Background color for a secondary alert or card.
+     */
+	--md-sys-color-secondary-container: rgb(57 75 59);
+
+	/* 
+     * --md-sys-color-on-secondary-container
+     * Text or icon color on secondary container backgrounds.
+     * Example: Text on secondary-colored cards or sections.
+     */
+	--md-sys-color-on-secondary-container: rgb(211 232 210);
+
+	/* 
+     * --md-sys-color-tertiary
+     * Tertiary color used for elements of lesser importance. Often applied to specific accents and details.
+     * Example: Tertiary icons or divider lines.
+     */
+	--md-sys-color-tertiary: rgb(162 206 216);
+
+	/* 
+     * --md-sys-color-on-tertiary
+     * Text or icon color used on tertiary-colored surfaces.
+     * Example: Text or icons on tertiary-colored elements.
+     */
+	--md-sys-color-on-tertiary: rgb(0 54 62);
+
+	/* 
+     * --md-sys-color-tertiary-container
+     * Tertiary-colored container backgrounds. A subtle color used for elements that are further down the priority list.
+     * Example: Background for tertiary cards or accents.
+     */
+	--md-sys-color-tertiary-container: rgb(32 77 85);
+
+	/* 
+     * --md-sys-color-on-tertiary-container
+     * Text or icon color placed on tertiary container surfaces.
+     * Example: Text or icons on tertiary-colored cards or sections.
+     */
+	--md-sys-color-on-tertiary-container: rgb(189 234 244);
+
+	/* 
+     * --md-sys-color-error
+     * Color used for error states, alerts, or destructive actions.
+     * Example: Error message text, red buttons for destructive actions.
+     */
+	--md-sys-color-error: rgb(255 180 171);
+
+	/* 
+     * --md-sys-color-on-error
+     * Text or icon color on error elements, typically white or light color to maintain contrast.
+     * Example: Text on error background or alert message.
+     */
+	--md-sys-color-on-error: rgb(105 0 5);
+
+	/* 
+     * --md-sys-color-error-container
+     * Background color for error-related elements, typically used for alert containers.
+     * Example: Background color for error alert boxes.
+     */
+	--md-sys-color-error-container: rgb(147 0 10);
+
+	/* 
+     * --md-sys-color-on-error-container
+     * Text or icon color used on error containers.
+     * Example: Text inside error alert boxes.
+     */
+	--md-sys-color-on-error-container: rgb(255 218 214);
+
+	/* 
+     * --md-sys-color-background
+     * The main background color of the UI, covering most of the screen.
+     * Example: Background color of the main content area.
+     */
+	--md-sys-color-background: rgb(16 21 16);
+
+	/* 
+     * --md-sys-color-on-background
+     * Text and icons color on the background. Ensures sufficient contrast for readability.
+     * Example: Text on the main content area background.
+     */
+	--md-sys-color-on-background: rgb(223 228 220);
+
+	/* 
+     * --md-sys-color-surface
+     * Surface color used for UI components that are above the background, such as cards or modal dialogs.
+     * Example: Card background or modal background.
+     */
+	--md-sys-color-surface: rgb(16 21 16);
+
+	/* 
+     * --md-sys-color-on-surface
+     * Text and icons color used on surface-colored components, ensuring good contrast.
+     * Example: Text on card background or modal window.
+     */
+	--md-sys-color-on-surface: rgb(223 228 220);
+
+	/* 
+     * --md-sys-color-surface-variant
+     * A variant surface color used for alternative surfaces that are not the primary background.
+     * Example: Less prominent elements, like sidebars or sections that are distinct from the main content.
+     */
+	--md-sys-color-surface-variant: rgb(65 73 65);
+
+	/* 
+     * --md-sys-color-on-surface-variant
+     * Text and icons color for surfaces using the surface-variant color.
+     * Example: Text on a secondary background like a sidebar.
+     */
+	--md-sys-color-on-surface-variant: rgb(193 201 190);
+
+	/* 
+     * --md-sys-color-outline
+     * Outline color, used for borders or dividers.
+     * Example: Border around input fields or buttons.
+     */
+	--md-sys-color-outline: rgb(139 147 137);
+
+	/* 
+     * --md-sys-color-outline-variant
+     * A variant of the outline color, used for secondary borders or dividers.
+     * Example: Less prominent borders for secondary elements.
+     */
+	--md-sys-color-outline-variant: rgb(65 73 65);
+
+	/* 
+     * --md-sys-color-shadow
+     * Shadow color, typically used for the shadow effect on floating elements.
+     * Example: Shadow around modals or pop-ups.
+     */
+	--md-sys-color-shadow: rgb(0 0 0);
+
+	/* 
+     * --md-sys-color-scrim
+     * Scrim color, often used for dark overlays or backgrounds behind floating elements.
+     * Example: Dark overlay behind modals to provide focus on the active UI element.
+     */
+	--md-sys-color-scrim: rgb(0 0 0);
+
+	/* 
+     * --md-sys-color-inverse-surface
+     * The background color for inverse UI elements (used when switching from light to dark).
+     * Example: Dark background used for buttons or text when the UI is inverted (like dark text on light buttons).
+     */
+	--md-sys-color-inverse-surface: rgb(223 228 220);
+
+	/* 
+     * --md-sys-color-inverse-on-surface
+     * Text and icon color on inverse surfaces.
+     * Example: Text or icons placed on a dark background (inverse mode).
+     */
+	--md-sys-color-inverse-on-surface: rgb(45 50 44);
+
+	/* 
+     * --md-sys-color-inverse-primary
+     * Color used for primary elements in inverse mode.
+     * Example: Inverse primary buttons or highlighted text in dark mode.
+     */
+	--md-sys-color-inverse-primary: rgb(51 105 64);
+
+	/* 
+     * --md-sys-color-primary-fixed
+     * A fixed version of the primary color that is used for specific UI elements that should not change based on theme.
+     * Example: Fixed primary color for prominent buttons or headers.
+     */
+	--md-sys-color-primary-fixed: rgb(181 241 189);
+
+	/* 
+     * --md-sys-color-on-primary-fixed
+     * Text and icon color on fixed primary-colored elements.
+     * Example: Text inside fixed primary buttons.
+     */
+	--md-sys-color-on-primary-fixed: rgb(0 33 11);
+
+	/* 
+     * --md-sys-color-primary-fixed-dim
+     * A dimmed version of the primary fixed color used for inactive or disabled elements.
+     * Example: Inactive buttons or disabled links.
+     */
+	--md-sys-color-primary-fixed-dim: rgb(153 212 162);
+
+	/* 
+     * --md-sys-color-on-primary-fixed-variant
+     * Text and icon color on dimmed primary fixed elements.
+     * Example: Dimmed text on inactive primary-colored buttons.
+     */
+	--md-sys-color-on-primary-fixed-variant: rgb(25 81 42);
+
+	/* 
+     * --md-sys-color-secondary-fixed
+     * A fixed version of the secondary color used for UI elements that should remain the same regardless of theme.
+     * Example: Fixed secondary color for secondary buttons or headers.
+     */
+	--md-sys-color-secondary-fixed: rgb(211 232 210);
+
+	/* 
+     * --md-sys-color-on-secondary-fixed
+     * Text and icon color used on fixed secondary-colored elements.
+     * Example: Text inside fixed secondary buttons.
+     */
+	--md-sys-color-on-secondary-fixed: rgb(14 31 18);
+
+	/* 
+     * --md-sys-color-secondary-fixed-dim
+     * A dimmed version of the fixed secondary color used for inactive elements.
+     * Example: Disabled secondary buttons or links.
+     */
+	--md-sys-color-secondary-fixed-dim: rgb(183 204 183);
+
+	/* 
+     * --md-sys-color-on-secondary-fixed-variant
+     * Text and icon color used on dimmed fixed secondary elements.
+     * Example: Text on dimmed secondary buttons.
+     */
+	--md-sys-color-on-secondary-fixed-variant: rgb(57 75 59);
+
+	/* 
+     * --md-sys-color-tertiary-fixed
+     * A fixed tertiary color used for tertiary UI elements that should remain constant regardless of theme.
+     * Example: Fixed tertiary color for tertiary buttons or special sections.
+     */
+	--md-sys-color-tertiary-fixed: rgb(189 234 244);
+
+	/* 
+     * --md-sys-color-on-tertiary-fixed
+     * Text and icon color on fixed tertiary-colored elements.
+     * Example: Text inside fixed tertiary buttons.
+     */
+	--md-sys-color-on-tertiary-fixed: rgb(0 31 37);
+
+	/* 
+     * --md-sys-color-tertiary-fixed-dim
+     * A dimmed version of the fixed tertiary color used for inactive or disabled tertiary elements.
+     * Example: Disabled tertiary buttons or inactive tertiary icons.
+     */
+	--md-sys-color-tertiary-fixed-dim: rgb(162 206 216);
+
+	/* 
+     * --md-sys-color-on-tertiary-fixed-variant
+     * Text and icon color used on dimmed fixed tertiary elements.
+     * Example: Text on disabled tertiary buttons or icons.
+     */
+	--md-sys-color-on-tertiary-fixed-variant: rgb(32 77 85);
+
+	/* 
+     * --md-sys-color-surface-dim
+     * Dimmed version of the surface color, used for surfaces that are less prominent or appear in the background.
+     * Example: Background color of disabled cards or inactive sections.
+     */
+	--md-sys-color-surface-dim: rgb(16 21 16);
+
+	/* 
+     * --md-sys-color-surface-bright
+     * A brighter surface color used for elements that need to be more noticeable but not too prominent.
+     * Example: Active cards or sections that need a subtle highlight.
+     */
+	--md-sys-color-surface-bright: rgb(54 58 53);
+
+	/* 
+     * --md-sys-color-surface-container-lowest
+     * The lowest level of surface container, often used for less important UI elements.
+     * Example: Least prominent background areas, such as an inactive toolbar.
+     */
+	--md-sys-color-surface-container-lowest: rgb(11 15 11);
+
+	/* 
+     * --md-sys-color-surface-container-low
+     * Used for slightly more prominent container surfaces.
+     * Example: Background for low-priority elements like sidebars or cards.
+     */
+	--md-sys-color-surface-container-low: rgb(24 29 24);
+
+	/* 
+     * --md-sys-color-surface-container
+     * Standard container surface color.
+     * Example: General container backgrounds, like modals or sections.
+     */
+	--md-sys-color-surface-container: rgb(28 33 28);
+
+	/* 
+     * --md-sys-color-surface-container-high
+     * A higher-priority surface container color, used for elements that need more attention.
+     * Example: Active modal or panel backgrounds.
+     */
+	--md-sys-color-surface-container-high: rgb(38 43 38);
+
+	/* 
+     * --md-sys-color-surface-container-highest
+     * The highest priority container surface, used for prominent UI elements.
+     * Example: Floating elements, like a prominent action button.
+     */
+	--md-sys-color-surface-container-highest: rgb(49 54 49);
+
+	/* 
+     * --md-extended-color-custom-color-color
+     * A custom color for specific branding or accents, outside of the Material Design palette.
+     * Example: Branded UI elements or custom call-to-action buttons.
+     */
+	--md-extended-color-custom-color-color: rgb(164 201 254);
+
+	/* 
+     * --md-extended-color-custom-color-on-color
+     * Text or icon color for custom color backgrounds, ensuring sufficient contrast.
+     * Example: Text inside custom-colored elements like headers or buttons.
+     */
+	--md-extended-color-custom-color-on-color: rgb(0 49 93);
+
+	/* 
+     * --md-extended-color-custom-color-color-container
+     * Background color for custom elements or containers with custom branding.
+     * Example: Background color for a branded section or custom card.
+     */
+	--md-extended-color-custom-color-color-container: rgb(32 72 118);
+
+	/* 
+     * --md-extended-color-custom-color-on-color-container
+     * Text and icon color on custom-colored containers, ensuring legibility.
+     * Example: Text inside a custom container like a promotional banner.
+     */
+	--md-extended-color-custom-color-on-color-container: rgb(211 227 255);
+}
