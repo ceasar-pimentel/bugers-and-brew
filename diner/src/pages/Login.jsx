@@ -1,3 +1,7 @@
 export default function Login() {
-	return <></>;
+	return (
+		<>
+			<h1>login</h1>
+		</>
+	);
 }

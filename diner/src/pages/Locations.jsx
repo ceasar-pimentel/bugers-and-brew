@@ -1,3 +1,7 @@
 export default function Location() {
-	return <></>;
+	return (
+		<>
+			<h1>locations</h1>
+		</>
+	);
 }

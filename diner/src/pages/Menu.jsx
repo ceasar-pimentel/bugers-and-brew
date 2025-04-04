@@ -1,3 +1,7 @@
 export default function Menu() {
-	return <></>;
+	return (
+		<>
+			<h1>Menu</h1>
+		</>
+	);
 }
