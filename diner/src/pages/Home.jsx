@@ -1,11 +1,10 @@
 import { Outlet } from "react-router";
-import Navigation from "../components/Navigation/Navigation";
+import { Header } from "../components";
 
 export default function Home() {
 	return (
 		<>
-			<h1>test</h1>
-			<Navigation />
+			<Header />
 			<Outlet />
 		</>
 	);

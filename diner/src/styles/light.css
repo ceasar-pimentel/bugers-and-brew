@@ -137,7 +137,7 @@
 
 	/* 
      * --md-sys-color-surface
-     * Background color for UI elements such as cards, modals, and other surfaces.
+     * Background color for UI elements such as cards, modals, and other surfaces. 
      * Example: Background color of a card or modal window.
      */
 	--md-sys-color-surface: rgb(246 251 242);
