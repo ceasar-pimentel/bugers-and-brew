@@ -1,12 +1,14 @@
 header {
 	display: flex;
-	position: relative;
+	width: 100%;
+	height: 16vh;
 	align-items: center;
 	justify-content: space-between;
-	margin: 2em;
 	max-width: 100vw;
+	padding: 2em;
 	align-items: center;
 }
+
 .open-nav-btn {
 	height: 30px;
 	width: 30px;

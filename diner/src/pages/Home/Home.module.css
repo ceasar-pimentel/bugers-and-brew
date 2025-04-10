@@ -1,0 +1,22 @@
+.carousel {
+	height: 300px;
+	border: 1px solid black;
+	margin-top: 16vh;
+}
+
+.outlet {
+	flex-grow: 1;
+	position: relative;
+	scrollbar-gutter: stable overlay;
+}
+
+.outlet::-webkit-scrollbar {
+	display: none;
+}
+
+.header {
+	position: fixed;
+	top: 0px;
+	box-shadow: 0 -1px 10px 1px var(--md-sys-color-outline-variant);
+	z-index: 1000;
+}

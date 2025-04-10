@@ -1,0 +1,16 @@
+.menu-section {
+	display: flex;
+	height: 100%;
+	flex-direction: row;
+	position: relative;
+	align-items: center;
+	gap: 8px;
+	margin-top: 64px;
+}
+
+.menu-nav {
+	top: 20vh;
+	position: sticky;
+	align-self: flex-start;
+	margin-top: 1em;
+}

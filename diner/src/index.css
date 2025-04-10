@@ -8,16 +8,25 @@
 	color: var(--md-sys-color-on-background);
 }
 
+html,
+body,
+#root {
+	min-height: 100vh;
+}
+
+#root {
+	position: relative;
+}
+
 /* 🌐 Mobile: Base 16px */
 body {
-	min-height: 100vh;
 	font-family: var(--primary-font);
 	--font-size-xs: 0.75rem; /* 12px */
 	--font-size-sm: 0.875rem; /* 14px */
 	--font-size-md: 1rem; /* 16px */
 	--font-size-lg: 1.125rem; /* 18px */
 	--font-size-xl: 1.25rem; /* 20px */
-	--font-size-title: 3rem; /*32px*/
+	--font-size-title: 2rem; /*32px*/
 	margin: 0;
 }
 

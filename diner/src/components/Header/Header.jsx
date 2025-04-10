@@ -4,11 +4,11 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { TbPaperBag } from "react-icons/tb";
 import React from "react";
 
-export default function Header() {
+export default function Header({ className }) {
 	const [isOpen, setIsOpen] = React.useState(false);
 
 	return (
-		<header className={styles["header"]}>
+		<header className={`${styles["header"]} ${className} `}>
 			<RxHamburgerMenu
 				onClick={() => {
 					console.log("clicked");
@@ -16,7 +16,7 @@ export default function Header() {
 				}}
 				className={styles["open-nav-btn"]}
 			/>
-			<h1 className={styles["title"]}>Burgers & Brew</h1>
+			<h1 className={styles["title"]}>Burgers & Brews</h1>
 			<Navigation
 				className={`${styles["nav"]} ${isOpen ? styles["nav-open"] : ""}`}
 				isOpen={isOpen}

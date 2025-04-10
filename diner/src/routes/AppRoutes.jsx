@@ -7,7 +7,7 @@ export default function AppRoutes() {
 		<Router>
 			<Routes>
 				<Route path="/front-end-demo-projects/diner/" element={<Home />}>
-					<Route index element={<Menu />} />
+					<Route index element={<Menu />}></Route>
 					<Route path="locations" element={<Locations />} />
 					<Route path="catering" element={<Catering />} />
 					<Route path="careers" element={<Careers />} />
