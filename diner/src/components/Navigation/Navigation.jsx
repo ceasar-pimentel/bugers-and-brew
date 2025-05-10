@@ -12,7 +12,6 @@ export default function Navigation({ className, isOpen, setIsOpen }) {
 		setIsOpen(false);
 	}
 
-	console.log(isOpen);
 	return (
 		<nav className={className}>
 			<IoClose

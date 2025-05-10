@@ -2,7 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	border-radius: 10px;
-	height: 400px;
+	height: 440px;
 	width: 280px;
 	margin: 10px;
 	overflow: hidden;
@@ -17,6 +17,7 @@
 
 .image {
 	object-fit: cover;
+	height: 240px;
 }
 
 .info-div {
@@ -39,7 +40,7 @@
 .description,
 .info-details,
 .title {
-	font-size: var(--font-size-sm);
+	font-size: var(--font-size-xs);
 	padding: 0;
 	margin: 0;
 }
@@ -47,6 +48,7 @@
 .description {
 	margin-top: 0.5;
 	grid-area: desc;
+	height: 45px;
 }
 
 .info-details {

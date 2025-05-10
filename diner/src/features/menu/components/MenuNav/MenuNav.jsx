@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router";
+import { NavLink } from "react-router";
 import styles from "./MenuNav.module.css";
 import { PiHamburgerLight } from "react-icons/pi";
 import { CiFries } from "react-icons/ci";
@@ -9,8 +9,6 @@ import { BsCupStraw } from "react-icons/bs";
 import { CiHotdog } from "react-icons/ci";
 
 export default function MenuNav({ className }) {
-	const location = useLocation();
-
 	return (
 		<nav className={`${styles["nav"]} ${className}`}>
 			<ul className={styles["menu-links-ul"]}>

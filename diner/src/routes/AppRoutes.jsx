@@ -10,11 +10,11 @@ export default function AppRoutes() {
 					<Route index element={<Navigate to="menu" />}></Route>
 
 					<Route path="menu" element={<Menu />}>
-						<Route index element={<MenuSection />} />
-						<Route path="sides" element={<h1>sides</h1>} />
-						<Route path="veggies-more" element={<h1>veggies and more</h1>} />
-						<Route path="deserts" element={<h1>dessert</h1>} />
-						<Route path="drinks" element={<h1>drinks</h1>} />
+						<Route index element={<MenuSection type="burger" />} />
+						<Route path="sides" element={<MenuSection type="side" />} />
+						<Route path="veggies-more" element={<MenuSection type="other" />} />
+						<Route path="deserts" element={<MenuSection type="dessert" />} />
+						<Route path="drinks" element={<MenuSection type="beverage" />} />
 					</Route>
 					<Route path="locations" element={<Locations />} />
 					<Route path="catering" element={<Catering />} />
