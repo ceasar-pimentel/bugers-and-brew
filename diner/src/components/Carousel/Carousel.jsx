@@ -47,6 +47,8 @@ export default function Carousel() {
 							minWidth: "100%",
 							height: "100%",
 							background: `url("${item.imgUrl}")`,
+							backgroundRepeat: "no-repeat",
+							backgroundSize: "cover",
 						}}
 					/>
 				))}

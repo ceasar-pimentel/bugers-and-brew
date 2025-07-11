@@ -5,6 +5,7 @@ function seed(server) {
 	seedBeverages(server);
 	seedDesserts(server);
 	seedCarousel(server);
+	seedLocations(server);
 }
 
 function seedBeverages(server) {
@@ -306,6 +307,22 @@ function seedCarousel(server) {
 	});
 }
 
+function seedLocations(server) {
+	server.create("location", {
+		id: 1,
+		street: "1234 I want job st.",
+		city: "Software",
+		phone: "(234) 567-8903",
+	});
+
+	server.create("location", {
+		id: 2,
+		street: "124 React dr",
+		city: "Engineer",
+		phone: "(245) 324-2345",
+	});
+}
+
 function routes() {
 	this.namespace = "/api";
 
@@ -327,10 +344,14 @@ function routes() {
 	this.get("/carousel", (schema, request) => {
 		return schema.carousels.all();
 	});
+
+	this.get("/locations", (schema, request) => {
+		return schema.locations.all();
+	});
 }
 
 createServer({
-	models: { item: Model, carousel: Model },
+	models: { item: Model, carousel: Model, location: Model },
 	seeds: seed,
 	routes: routes,
 });

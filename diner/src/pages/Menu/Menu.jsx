@@ -9,7 +9,7 @@ export default function Menu() {
 				<Carousel>place holder for carousel</Carousel>
 			</div>
 			<section className={styles["menu-section"]}>
-				<MenuNav className={styles["menu-nav"]}></MenuNav>
+				<MenuNav className={styles["menu-nav"]} />
 				<Outlet />
 			</section>
 		</>
