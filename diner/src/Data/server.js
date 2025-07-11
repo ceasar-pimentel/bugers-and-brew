@@ -350,7 +350,7 @@ function routes() {
 	});
 }
 
-createServer({
+export default createServer({
 	models: { item: Model, carousel: Model, location: Model },
 	seeds: seed,
 	routes: routes,
