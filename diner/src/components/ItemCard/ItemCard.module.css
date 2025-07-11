@@ -1,0 +1,64 @@
+.section-card {
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	height: 440px;
+	width: 280px;
+	margin: 10px;
+	overflow: hidden;
+}
+
+.title {
+	padding: 0;
+	margin: 0;
+	background: inherit;
+	grid-area: title;
+}
+
+.image {
+	object-fit: cover;
+	height: 240px;
+}
+
+.info-div {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto auto auto;
+	height: 100%;
+	border: 0.5px solid var(--md-sys-color-outline);
+	border-bottom-right-radius: inherit;
+	border-bottom-left-radius: inherit;
+	padding: 1em;
+	grid-template-areas:
+		"title title"
+		"desc desc"
+		"info info"
+		"custom add";
+	column-gap: 1em;
+}
+
+.description,
+.info-details,
+.title {
+	font-size: var(--font-size-xs);
+	padding: 0;
+	margin: 0;
+}
+
+.description {
+	margin-top: 0.5;
+	grid-area: desc;
+	height: 45px;
+}
+
+.info-details {
+	grid-area: info;
+}
+
+.custom-btn {
+	grid-area: custom;
+}
+
+.add-btn {
+	grid-area: add;
+}

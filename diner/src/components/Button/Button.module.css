@@ -1,0 +1,13 @@
+.button {
+	outline: none;
+	border: 1px solid var(--md-sys-color-primary);
+	border-radius: 100px;
+	padding: 0.5em 0.7em;
+	font-weight: bold;
+	color: var(--md-sys-color-primary);
+}
+
+.button.button-filled {
+	background: var(--md-sys-color-primary);
+	color: var(--md-sys-color-on-primary);
+}

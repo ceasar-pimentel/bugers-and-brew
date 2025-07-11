@@ -1,0 +1,15 @@
+.outlet {
+	flex-grow: 1;
+	position: relative;
+	scrollbar-gutter: stable overlay;
+}
+
+.outlet::-webkit-scrollbar {
+	display: none;
+}
+
+.header {
+	position: fixed;
+	top: 0px;
+	z-index: 1000;
+}

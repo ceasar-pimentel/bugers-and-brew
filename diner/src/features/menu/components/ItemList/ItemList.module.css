@@ -1,0 +1,10 @@
+.menu-section-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+	grid-template-rows: repeat(aut-fit, minmax(500px, 500px));
+	grid-auto-rows: auto;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	gap: 1rem;
+}
