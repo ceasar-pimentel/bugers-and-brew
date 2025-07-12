@@ -45,8 +45,8 @@ jobs:
 
       - name: Build
         run: |
-          cd diner
           tree diner/src
+          cd diner
           npm run build
 
       - name: Setup Pages
