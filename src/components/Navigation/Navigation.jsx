@@ -21,7 +21,7 @@ export default function Navigation({ className, isOpen, setIsOpen }) {
 			<ul className={styles["nav-links"]}>
 				<li>
 					<NavLink
-						to="/front-end-demo-projects/diner/menu"
+						to="/burgers-and-brew"
 						className={getActiveStyle}
 						onClick={handleLinkOnClick}
 					>

@@ -6,7 +6,7 @@ export default function AppRoutes() {
 	return (
 		<Router>
 			<Routes>
-				<Route path="/front-end-demo-projects/diner/" element={<Home />}>
+				<Route path="/burgers-and-brew/" element={<Home />}>
 					<Route index element={<Navigate to="menu" />}></Route>
 
 					<Route path="menu" element={<Menu />}>
@@ -20,10 +20,7 @@ export default function AppRoutes() {
 					<Route path="catering" element={<Catering />} />
 					<Route path="careers" element={<Careers />} />
 				</Route>
-				<Route
-					path="/front-end-demo-projects/diner/login"
-					element={<Login />}
-				/>
+				<Route path="/burgers-and-brew/login" element={<Login />} />
 			</Routes>
 		</Router>
 	);

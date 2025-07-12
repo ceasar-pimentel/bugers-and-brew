@@ -136,3 +136,18 @@ dist
 .pnp.*
 jimmysdiner/.vite/deps/_metadata.json
 jimmysdiner/.vite/deps/package.json
+
+
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
