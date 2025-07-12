@@ -48,7 +48,12 @@ jobs:
           tree diner/src
           cd diner
           npm run build
-           cp ../dist/diner/index.html ../dist/diner/404.html
+          pwd
+          cd ..
+          ls
+          cd ..
+          ls 
+          cp ../dist/diner/index.html ../dist/diner/404.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
