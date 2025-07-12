@@ -48,7 +48,7 @@ jobs:
 
           echo "current directory"
           pwd
-
+          tree -L 3
           echo "change directory up" 
           cd ..
           pwd
