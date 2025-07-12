@@ -49,6 +49,10 @@ jobs:
           echo "current directory"
           pwd
 
+          echo "change directory up" 
+          cd..
+          pwd
+
           cp dist/index.html dist/404.html
           tree dist
 
