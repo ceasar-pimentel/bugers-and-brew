@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import ItemList from "../../features/menu/components/ItemList/ItemList";
+import ItemList from "../../features/menu/components/ItemList/ItemList.jsx";
 import React from "react";
 import ItemCard from "../../components/ItemCard/ItemCard";
 
