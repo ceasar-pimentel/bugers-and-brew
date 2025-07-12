@@ -40,13 +40,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd diner
           npm ci
 
       - name: Build
         run: |
           tree diner/src
-          cd diner
           npm run build
 
           echo "current directory"
