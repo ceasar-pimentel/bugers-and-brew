@@ -48,7 +48,6 @@ jobs:
           tree diner/src
           cd diner
           npm run build
-          cd dist/diner
           cp index.html 404.html
 
       - name: Setup Pages
