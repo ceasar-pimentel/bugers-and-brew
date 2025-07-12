@@ -48,10 +48,15 @@ jobs:
           tree diner/src
           cd diner
           npm run build
+          echo "pwd"
           pwd
+          echo "cd .."
           cd ..
+          echo "ls"
           ls
+          echo "cd .."
           cd ..
+          echo "ls"
           ls 
           cp ../dist/diner/index.html ../dist/diner/404.html
 
