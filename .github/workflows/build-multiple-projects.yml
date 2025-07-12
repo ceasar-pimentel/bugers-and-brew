@@ -59,6 +59,11 @@ jobs:
 
           cp dist/diner/index.html dist/diner/404.html
           tree dist
+          git checkout gh-pages
+          cp -r dist/diner/* .
+          git add .
+          git commit -m "Deploy updated site with 404.html"
+          git push origin gh-pages
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
