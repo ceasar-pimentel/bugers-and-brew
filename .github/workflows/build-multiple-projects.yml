@@ -52,15 +52,8 @@ jobs:
           pwd
           echo "cd .."
           ls
-          cd ..
-          pwd
-          ls
-          echo "cd .."
-          cd ..
-          pwd
-          ls
-
-          cp ../dist/diner/index.html ../dist/diner/404.html
+          cp /dist/diner/index.html /dist/diner/404.html
+          tree dist
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
