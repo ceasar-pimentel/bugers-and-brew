@@ -50,7 +50,7 @@ jobs:
           pwd
 
           echo "change directory up" 
-          cd..
+          cd ..
           pwd
 
           cp dist/index.html dist/404.html
