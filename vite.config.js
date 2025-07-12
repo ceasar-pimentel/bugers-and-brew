@@ -6,6 +6,6 @@ export default defineConfig({
 	plugins: [react()],
 	base: "/burgers-and-brew/", // Change for project2 and project3 accordingly
 	build: {
-		outDir: `../dist`, // Change for project2 and project3
+		outDir: `dist`, // Change for project2 and project3
 	},
 });
