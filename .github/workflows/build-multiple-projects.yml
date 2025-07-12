@@ -54,7 +54,7 @@ jobs:
           pwd
           ls
 
-          tree -L 2
+          tree -L 3
           cp dist/index.html dist/404.html
 
       - name: Setup Pages
