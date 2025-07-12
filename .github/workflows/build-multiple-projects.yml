@@ -44,24 +44,13 @@ jobs:
 
       - name: Build
         run: |
-          tree diner/src
           npm run build
 
           echo "current directory"
           pwd
-          echo "cd .."
-          cd ..
-          echo "one directory up"
-          pwd
-          ls
 
-          cp dist/diner/index.html dist/diner/404.html
+          cp dist/index.html dist/404.html
           tree dist
-          git checkout gh-pages
-          cp -r dist/diner/* .
-          git add .
-          git commit -m "Deploy updated site with 404.html"
-          git push origin gh-pages
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
