@@ -49,11 +49,13 @@ jobs:
           cd diner
           npm run build
 
-          set -x; pwd
-          set -x; cd ..
-          set -x; pwd
-          set -x; cd ..
-          set -x; pwd
+          pwd
+          echo "cd .."
+          cd ..
+          pwd
+          echo "cd .."
+          cd ..
+          pwd
 
           cp ../dist/diner/index.html ../dist/diner/404.html
 
