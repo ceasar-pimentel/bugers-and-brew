@@ -5,8 +5,10 @@ import { Outlet } from "react-router";
 export default function Menu() {
 	return (
 		<>
-			<div className={styles["carousel"]}>
-				<Carousel>place holder for carousel</Carousel>
+			<div className={styles["carousel-div"]}>
+				<Carousel className={styles["carousel"]}>
+					place holder for carousel
+				</Carousel>
 			</div>
 			<section className={styles["menu-section"]}>
 				<MenuNav className={styles["menu-nav"]} />
