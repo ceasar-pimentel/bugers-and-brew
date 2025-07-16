@@ -4,8 +4,10 @@
 	border-radius: 10px;
 	height: 440px;
 	width: 280px;
-	margin: 10px;
+	margin: 4px;
 	overflow: hidden;
+	align-items: center;
+	justify-self: center;
 }
 
 .title {
@@ -17,7 +19,9 @@
 
 .image {
 	object-fit: cover;
+	display: block;
 	height: 240px;
+	width: 100%;
 }
 
 .info-div {
