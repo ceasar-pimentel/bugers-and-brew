@@ -14,7 +14,7 @@ export default function MenuNav({ className }) {
 			<ul className={styles["menu-links-ul"]}>
 				<li>
 					<NavLink
-						to="/front-end-demo-projects/diner/menu"
+						to="/burgers-and-brew/menu"
 						className={({ isActive }) =>
 							isActive ? styles["icon-active"] : ""
 						}
