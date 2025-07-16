@@ -1,11 +1,15 @@
 * {
-	box-sizing: border-box;
-
 	/* typography */
 	--primary-font: "Montserrat", sans-serif;
 	--secondary-font: "Amatic SC", sans-serif;
 	background-color: var(--md-sys-color-background);
 	color: var(--md-sys-color-on-background);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
 html,
